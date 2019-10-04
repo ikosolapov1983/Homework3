@@ -3,7 +3,9 @@ b = input("Введите данные b: ")
 try:
     c = int(a) + int(b)
     print(c)
-except:
+except ValueError as e:
     c = a + b
     print(c)
+    print(e)
+
 
