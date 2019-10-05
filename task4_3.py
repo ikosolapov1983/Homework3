@@ -1,8 +1,7 @@
 a = list(input("Введите данные: "))
-a.sort()
-print(a)
-i = 0
-for el in range(len(a)):
-    print(a[i])
-    del a[i]
-print(a)
+c = len(a)
+while c > 0:
+    print(a)
+    a.remove(min(a))
+    c -= 1
+
